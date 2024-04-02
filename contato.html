@@ -4,117 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petshop - Contato</title>
-    <style>
-        *{
-            padding: 0px;
-            margin: 0px;
-        }
-        body{
-            
-            font-family: Arial, Helvetica, sans-serif;
-          
-        }
-        .header{
-            background: orange;
-            display: flex;
-            justify-content: space-between;
-            padding-inline: 16px;
-           
-        }
-        .nav{
-            max-width: 1440px;
-            height: 70px;
-            margin-inline: auto;
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
-
-        }
-        .nav-list{
-            display: flex;
-            gap: 32px;
-            list-style: none;
-        }
-        .nav-list a{
-            font-size: 20px;
-            color: #fff;
-            padding-block: 16px;
-        }
-        .box{
-            color: #fff;
-            position: absolute;
-            top: 50%;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.8)
-            
+    <link rel="stylesheet" href="style/styles.css">
+   
         
-        }
-        fieldset{
-            border: 3px solid orange;
-        
-        }
-        legend{
-            border: 3px solid orange;
-            padding: 10px;
-            text-align: center;
-            background-color: orange;
-            border-radius: 5px;
-            color: #fff;
-
-        }
-        a{
-            text-decoration: none;
-        }
-        #submit{
-            background: orange;
-            width: 100%;
-            border: none ;
-            padding: 15px;
-            color: #fff;
-            font-size: 15px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-weight: bold ;
-        
-        }
-        .main{
-            display: flex;
-            margin-inline: auto;
-            align-items: center;
-            justify-content: center;
-        }
-        footer{
-            background: orange;
-            display: flex;
-            justify-content: space-between;
-
-        }
-        .logo{
-            border-radius: 20px;
-        }
-        
-        
-      
-    </style>
-        <!-- 
-
-        Esse é um exercício em HTML. 
-        Nesta página, você deve criar um cabeçalho, um conteúdo principal e um rodapé.
-        O cabeçalho deve conter um título e um menu de navegação com três links: Home, Loja e Contato.
-        O conteúdo principal deve conter uma seção com um título e um parágrafo.
-        O rodapé deve conter um parágrafo com o texto "© 2024 Petshop. Todos os direitos reservados.".
-
-        Adicione um formulário de contato com campos para nome, email, telefone e mensagem.
-
-    -->
 </head>
-<body>
+<body class="contact">
     <!-- Cabeçalho -->
-    <header class="header">
-        <h1 class="h1">Entre em Contato</h1>
-        <nav class=" nav">
-            <ul class="nav-list">
+    <header>
+        <h1>Entre em Contato</h1>
+        <nav>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="loja.html">Loja</a></li>
                 <li><a href="contato.html">Contato</a></li>
@@ -123,36 +22,39 @@
     </header>
 
     <!-- Conteúdo principal -->
-    <main class="main">
+    <main class="cmain">
         <section>
             <h2>Informações de Contato</h2>
             <p>Entre em contato conosco para agendar serviços, tirar dúvidas ou fornecer feedback. Estamos aqui para ajudar!</p>
             <p>Telefone: (XX) XXXX-XXXX</p>
             <p>Email: contato@petshop.com</p>
         </section>
-       <div class="box">
-        <form>
+       
+        <form action="action" class="formpet">
             <fieldset>
-                <legend><b>Formulário</b></legend>
-            <p>Nome:<input type="text" name="nome" id="nome" required placeholder="Lorem Ipsum"></p>
-            <p>Email:<input type="email" name="email" id="email" required placeholder="Lorem@hotmail.com"></p>
-            <p>Telefone:<input type="tel" name="telefone" id="telefone" required placeholder="(xx)xxxxx-xxxx"></p>
-           <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Deixe sua mensagem aqui"></textarea>
-            <p><input type="submit" value="Enviar" id="submit"></p>
-        </fieldset>
-          </form>
-        </div>
+                <legend><b>Formulário Pet</b></legend><br>
+                <label for="name">Nome Completo:</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Nome" required> <br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="Email" required><br>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" name="telefone" id="tel" placeholder="Telefone" required><br>
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea> <br>
+                <input type="submit" value="Enviar">
+
+            </fieldset>
+        </form>
         <!-- 
 
             Adicionar um formulário de contato com campos para nome, email, telefone e mensagem.
 
         -->
     </main>
+   
 
     <!-- Rodapé -->
-    <footer id="footer">
-        <img class="logo" src="img/logo.jpg" alt="logo" width="60 px">
-        <p>© 2024 Petshop. Todos os direitos reservados.</p>
+    <footer>
+      <p></p>
     </footer>
 </body>
 </html>
