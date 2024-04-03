@@ -56,3 +56,28 @@ main{
     border-radius: 8px;
  
 }
+.tablepet{
+    border-collapse: collapse;
+    width: 100%;
+}
+.tablepet th, .tablepet td { 
+    border: 1px solid black;
+    padding: 8px;
+
+}
+.tablepet th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background: #208cb8;
+    color: #e5f1f6;
+}
+.tablepet tr:hover{
+    background-color:#ddd;
+}
+footer{
+    background: #208cb8;
+    color: #e5f1f6;
+    padding: 10px;
+}
+
